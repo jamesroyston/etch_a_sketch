@@ -8,8 +8,32 @@
 
   /* reset button decorations */
   text-decoration: none;
-  
+}
 
+input#gridInput {
+  width: 35px;
+  font-size: 18px;
+  background: none;
+  color: white;
+  outline-style: none;
+}
+
+#submitBtn {
+  padding: 5px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  
+}
+
+#submitBtn:hover {
+  box-sizing: border-box;
+  transition: 0.5s;
+  border-bottom: 2px white solid;
+  border-left: 2px white solid;
+  border-right: 2px white solid;
+  border-top: 2px white solid;
 }
 
 div#banner {
@@ -18,13 +42,30 @@ div#banner {
   height: 100px;
   width: 100vw;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 div#sub-banner {
   background-color: rgb(26, 22, 22);
-  
-  height: 35px;
-  margin: 0 auto;
+  color: white;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#sub-banner * {
+  margin: 7px;
 }
 
 div#container {
@@ -36,8 +77,8 @@ div#container {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  border: 1px grey solid;
-  width: 960px;
+  border: 2px black solid;
+  width: 400px;
   height: 400px;
   margin: 0 auto;
   margin-top: 2rem;
