@@ -68,6 +68,16 @@ div#sub-banner * {
   margin: 7px;
 }
 
+div > span > a {
+  text-decoration: none;
+  color: rgb(226, 185, 49);
+}
+
+div > span > a:hover {
+  color: white;
+  transition: 0.5s;
+}
+
 div#container {
 
   display: -webkit-box;
